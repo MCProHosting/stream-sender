@@ -3,9 +3,9 @@ var path = require('path');
 
 var config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config/config.js')));
 
-var ListReader      = require('./lib/listreader')
+var WHMCSListReader      = require('./lib/whmcslistreader')
 var Sender          = require('./lib/sender');
-var listReader      = new ListReader(config);
+var listReader      = new WHMCSListReader(config);
 
 
 listReader.readEmailList(function(list) {

@@ -1,0 +1,22 @@
+{
+  "name": "stream-sender",
+  "version": "0.0.1",
+  "description": "Mass E-Mail sending without the hassle",
+  "main": "Gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MCProHosting/stream-sender"
+  },
+  "author": "Matthew Salsamendi <matt@mcprohosting.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MCProHosting/stream-sender/issues"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "ejs": "^1.0.0",
+    "mysql": "^2.5.3",
+    "nodemailer": "^1.3.0",
+    "nodemailer-smtp-transport": "^0.1.13"
+  }
+}
