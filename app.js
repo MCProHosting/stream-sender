@@ -1,12 +1,10 @@
-var fs   = require('fs');
-var path = require('path');
+var fs                  = require('fs');
+var path                = require('path');
+var WHMCSListReader     = require('./lib/whmcslistreader')
+var Sender              = require('./lib/sender');
+var config              = require('./config/config.js');
 
-var config = require('./config/config.js');
-
-var WHMCSListReader      = require('./lib/whmcslistreader')
-var Sender          = require('./lib/sender');
-var listReader      = new WHMCSListReader(config);
-
+var listReader = new WHMCSListReader(config);
 
 listReader.readEmailList(function(list) {
     var sender = new Sender(config, list);
