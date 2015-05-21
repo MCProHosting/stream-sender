@@ -1,3 +1,3 @@
 ## Stream Sender
 
-TODO: Write this    
+It sends E-Mails good.
