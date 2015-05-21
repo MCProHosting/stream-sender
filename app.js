@@ -5,7 +5,8 @@ var StaticReader     = require('./lib/staticreader')
 var Sender              = require('./lib/sender');
 var config              = require('./config/config.js');
 
-var listReader = require('./lib/' + config.reader)(config);
+var ListReader = require('./lib/' + config.reader);
+var listReader = new ListReader(config);
 
 listReader.readEmailList(function(list) {
     var sender = new Sender(config, list);
