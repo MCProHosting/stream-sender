@@ -1,1 +1,4 @@
 node_modules
+templates/*
+!templates/example.ejs
+config/config.js
